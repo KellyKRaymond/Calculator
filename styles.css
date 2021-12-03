@@ -1,0 +1,37 @@
+.game-board {
+    height: fit-content;
+    width: fit-content;
+    background-color: #CCFFDC;
+}
+
+.tile {
+    height: 150px;
+    width: 150px;
+    border: solid;
+    text-align: center;
+    font-size: 30px;
+}
+.outter-row {
+    display: flex;
+    justify-content: center;
+}
+.middle-rows {
+    display: flex;
+    justify-content: space-between;
+}
+.card-equal-delete {
+    border: solid;
+    height: 100px;
+    width: 170px;
+    text-align: center;
+    background-color: lemonchiffon;
+}
+.calculating-line {
+    height: 75px;
+    width: 400px;
+    background-color: lightcoral;
+    font-size: 33px;
+    border-radius: 5px;
+    color:lightcyan;
+    text-align: center;
+}
