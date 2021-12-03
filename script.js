@@ -1,25 +1,15 @@
-// const btn = document.createElement('button')
-// btn.innerHTML = 'click here'
-// document.body.appendChild(btn)
-
-// const holdoOutterTiles = document.getElementById("tile")
-// holdoOutterTiles.addEventListener('click')
-
-// let clicked = true;
-
-// for loop that runs over all my tiles and picks the operator or value 
-
 let numbers = document.querySelectorAll('.number')
-let btn = document.querySelectorAll('btn')
 let calculatingline = document.querySelector('.calculating-line')
 let operator = document.querySelectorAll('.operator')
 let deleteBox = document.querySelector('#goAway')
+let equalsBox = document.querySelector('#equals')
 
 function inputChange(e){
 let targetElement = e.target //target your click 
 let buttonValue = targetElement.innerText  // grabbing your value inside your element 
 calculatingline.innerText += buttonValue 
 }
+
 function allEventListeners(arrNums){
     for(let i = 0; i < arrNums.length; i++){
         arrNums[i].addEventListener('click' ,inputChange)
@@ -32,3 +22,27 @@ function deleteThis(){
     calculatingline.innerText = ' ' 
 }
 deleteBox.addEventListener('click', deleteThis)
+
+function calculating(screenItems) {
+    for(let i = 0; i <screenItems.length; i++){
+        if(screenItems[i] === '+'){
+            let addition = screenItems.split('+')
+            return(parseInt(addition[0])+parseInt(addition[1]))
+        } else if(screenItems[i] === '-'){
+                let subtraction = screenItems.split('-')
+                return(parseInt(subtraction[0])-parseInt(subtraction[1]))
+            } else if(screenItems[i] === '*'){
+                    let multiply = screenItems.split('*')
+                    return(parseInt(multiply[0])*parseInt(multiply[1]))
+            } else if(screenItems[i] === '/'){
+                    let divid = screenItems.split('/')
+                    return(parseInt(divid[0])/parseInt(divid[1]))
+            }
+    }
+}
+
+
+function equalsButton(){
+    calculatingline.innerText = calculating(calculatingline.innerText)
+}
+equalsBox.addEventListener('click', equalsButton)
