@@ -7,7 +7,7 @@ let equalsBox = document.querySelector('#equals')
 function inputChange(e){
 let targetElement = e.target //target your click 
 let buttonValue = targetElement.innerText  // grabbing your value inside your element 
-calculatingline.innerText += buttonValue 
+calculatingline.innerText += buttonValue  // where I click on the number two the number two appears in my calculating line 
 }
 
 function allEventListeners(arrNums){
@@ -41,8 +41,11 @@ function calculating(screenItems) {
     }
 }
 
-
 function equalsButton(){
     calculatingline.innerText = calculating(calculatingline.innerText)
 }
 equalsBox.addEventListener('click', equalsButton)
+
+
+// addded text to the tiles for decimal precent and delete button - changed delete I had to 'clear' 
+// still need to go back in and add the functionality to the new keys and format it more. 

@@ -1,3 +1,4 @@
+    
 .game-board {
     height: fit-content;
     width: fit-content;
@@ -5,11 +6,14 @@
 }
 
 .tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 150px;
     width: 150px;
     border: solid;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .outter-row {
     display: flex;
@@ -18,20 +22,54 @@
 .middle-rows {
     display: flex;
     justify-content: space-between;
+
 }
 .card-equal-delete {
     border: solid;
     height: 100px;
     width: 170px;
+    margin-top: 23px;
     text-align: center;
     background-color: lemonchiffon;
 }
+#equals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    margin-right: 525px;
+    transform: rotate(-45deg);
+
+}
+#goAway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 525px;
+    margin-top: -15px;
+    transform: rotate(-45deg);
+}
+
 .calculating-line {
     height: 75px;
-    width: 400px;
-    background-color: lightcoral;
-    font-size: 33px;
-    border-radius: 5px;
+    width: 500px;
+    transform: rotate(-42deg);
+    background-color: red;
+    font-size: 65px;
+    border-radius: 10px;
     color:lightcyan;
     text-align: center;
+    margin-top: 40px;
+}
+
+#percent-sign {
+    font-size: 20px;
+}
+
+#delete-last {
+    font-size: 18px;
+}
+
+#decimal-point {
+    font-size: 20px;
 }
