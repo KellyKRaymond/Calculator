@@ -73,3 +73,13 @@
 #decimal-point {
     font-size: 20px;
 }
+#begin-parenthesis {
+    font-size: 20px;
+}
+#closing-parenthesis {
+    font-size: 20px;
+}
+
+.tile-operator {
+    color: blue;
+}

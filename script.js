@@ -46,6 +46,5 @@ function equalsButton(){
 }
 equalsBox.addEventListener('click', equalsButton)
 
-
 // addded text to the tiles for decimal precent and delete button - changed delete I had to 'clear' 
 // still need to go back in and add the functionality to the new keys and format it more. 
