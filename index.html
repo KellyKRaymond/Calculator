@@ -5,51 +5,47 @@
     <title>Calculator Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="calculator-container">
-        <div class="top-row">
-            <div class="tile operator">AC</div>
-            <div class="tile number"> +/-</div>
-            <div class="tile number"> % </div>
-            <div class="tile number"> /</div>
+        
+        <div class="calculating-line row"></div>
+        <div class="goAway"></div>
+        <div class="row">
+            <div class="tile operator" id="goAway">AC</div>
+            <div class="tile operator"> +/-</div>
+            <div class="tile operator"> % </div>
+            <div class="tile operator"> /</div>
         </div>
-
-        <div class="second-row">
-            <div class="middle-rows">
-                <div class="tile operator"> 7 </div>
-                <div class="tile operator"> 8 </div>
-                <div class="tile operator"> 9 </div>
-                <div class="tile operator"> * </div>
-            </div>
-            <div class="third-row">
-                <div class="tile operator"> 4 </div>
-                <div class="tile operator"> 5 </div>
-                <div class="tile operator"> 6 </div>
-                <div class="tile operator"> - </div>
-                <div class="calculating-line"></div>
+        <div class="row">
+            <div class="tile number"> 7 </div>
+            <div class="tile number"> 8 </div>
+            <div class="tile number"> 9 </div>
+            <div class="tile operator"> * </div>
+        </div>
+        <div class="row">
+            <div class="tile number"> 4 </div>
+            <div class="tile number"> 5 </div>
+            <div class="tile number"> 6 </div>
+            <div class="tile operator"> - </div>
+        </div>
+            <div class="row">
+                <div class="tile number"> 1 </div>
+                <div class="tile number"> 2 </div>
+                <div class="tile number"> 3 </div>
+                <div class="tile operator"> + </div>
+        </div>
+            <div class="row">
+                <div class="tile operator"> /</div>
+                <div class="tile number"> </div>
+                <div class="tile operator"> . </div>
+                <div class="tile operator" id="equals"> = </div>
                 
             </div>
-            <div class="middle-rows">
-                <div class="tile" id="delete-last"> <h1> Delete </h1> </div>
-                <div class="card-equal-delete" id= 'goAway'> <h1> Clear </h1> </div>
-                <div class="tile"> </div>
-            </div>
         </div>
 
-        <div class="outter-row">
-            <div class="tile operator"> *</div>
-            <div class="tile number"> 5</div>
-            <div class="tile number"> 6</div>
-            <div class="tile number"> 7</div>
-            <div class="tile number"> 8</div>
-            <div class="tile number"> 9</div>
-            <div class="tile operator"> /</div>
-           
-        </div>
-    </div>
-    <script src = "script.js"></script>
+        <script src="script.js"></script>
 
 </body>
 
 </html>
-
