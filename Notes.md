@@ -1,0 +1,1 @@
+I started my calculator as a monopoly board, towards the end of my bootcamp I changed it to just a regular plan old calculator with functionality. 
